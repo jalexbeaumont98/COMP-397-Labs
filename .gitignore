@@ -2,3 +2,6 @@
 *.log
 *.sln
 /Lab1/UserSettings
+/Lab2/Library
+/Lab2/UserSettings
+*.csproj
