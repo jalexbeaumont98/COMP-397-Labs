@@ -34,6 +34,7 @@ public class PlayerInput : MonoBehaviour
 
     void Update()
     {
+
         Vector2 readMove = move.ReadValue<Vector2>();
         Vector2 readLook = look.ReadValue<Vector2>();
 
@@ -55,6 +56,13 @@ public class PlayerInput : MonoBehaviour
         camXRotation -= mouseSensY * readLook.y * Time.deltaTime;
         camXRotation = Mathf.Clamp(camXRotation, -90f, 90f);
         cam.gameObject.transform.localRotation = Quaternion.Euler(camXRotation, 0, 0);
+    }
+
+    public void ChangeMouseSensitivity(float value)
+    {
+        rotationSpeed = value;
+        mouseSensY = value;
+
     }
 
 
