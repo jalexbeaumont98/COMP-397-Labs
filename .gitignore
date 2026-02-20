@@ -6,3 +6,6 @@
 /Lab2/UserSettings
 *.csproj
 /Lab2/Temp
+/main_project_folder/Library
+/main_project_folder/UserSettings
+*.slnx

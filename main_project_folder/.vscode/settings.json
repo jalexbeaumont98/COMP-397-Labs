@@ -56,5 +56,16 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "Lab1.sln"
+    "files.associations": {
+        "*.asset": "yaml",
+        "*.meta": "yaml",
+        "*.prefab": "yaml",
+        "*.unity": "yaml"
+    },
+    "explorer.fileNesting.enabled": true,
+    "explorer.fileNesting.patterns": {
+        "*.sln": "*.csproj",
+        "*.slnx": "*.csproj"
+    },
+    "dotnet.defaultSolution": "main_project_folder.slnx"
 }
