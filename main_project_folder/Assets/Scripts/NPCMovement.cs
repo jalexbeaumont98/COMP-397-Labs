@@ -30,7 +30,7 @@ public class NPCMovement : MonoBehaviour
 
         if (Vector3.Distance(transform.position, destination) < 1f)
         {
-             currentWaypointIndex = (currentWaypointIndex + 1) % waypoints.Count;
+            currentWaypointIndex = (currentWaypointIndex + 1) % waypoints.Count;
             destination = waypoints[currentWaypointIndex].transform.position;
             agent.destination = destination;
         }
@@ -50,5 +50,26 @@ public class NPCMovement : MonoBehaviour
                 agent.destination = waypoints[currentWaypointIndex].transform.position;
             }
         }
+    }
+
+
+    private void OnTriggerStay(Collider other)
+    {
+        if (other.tag == "Player")
+        {
+            destination = other.transform.position;
+            agent.destination = destination;
+        }
+    }
+
+    void OnTriggerExit(Collider other)
+    {
+
+        if (other.tag == "Player")
+        {
+            destination = waypoints[currentWaypointIndex].transform.position;
+            agent.destination = destination;
+        }
+
     }
 }

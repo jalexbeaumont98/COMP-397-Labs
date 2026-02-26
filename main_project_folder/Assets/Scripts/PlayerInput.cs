@@ -6,6 +6,7 @@ using UnityEngine.InputSystem;
 public class PlayerInput : MonoBehaviour
 {
     private InputAction move;
+    private InputAction jump;
     private InputAction look;
     [SerializeField] private float maxSpeed = 10.0f;
     [SerializeField] private float gravity = -30.0f;
@@ -14,6 +15,8 @@ public class PlayerInput : MonoBehaviour
     [SerializeField] private float mouseSensY = 5.0f;
     [SerializeField] private CharacterController controller;
     [SerializeField] private Camera cam;
+
+    [SerializeField] AudioController ac;
     private float camXRotation = 0;
 
 
@@ -25,11 +28,28 @@ public class PlayerInput : MonoBehaviour
         if (cam == null)
             cam = GetComponentInChildren<Camera>();
 
+        if (ac == null)
+            ac = GetComponentInChildren<AudioController>();
+
+
         move = InputSystem.actions.FindAction("Player/Move");
         look = InputSystem.actions.FindAction("Player/Look");
+        jump = InputSystem.actions.FindAction("Player/Jump");
+
+        jump.started += Jump;
 
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
+    }
+
+    void OnEnable()
+    {
+        
+    }
+
+    void OnDisable()
+    {
+        jump.started -= Jump;
     }
 
     void Update()
@@ -56,6 +76,12 @@ public class PlayerInput : MonoBehaviour
         camXRotation -= mouseSensY * readLook.y * Time.deltaTime;
         camXRotation = Mathf.Clamp(camXRotation, -90f, 90f);
         cam.gameObject.transform.localRotation = Quaternion.Euler(camXRotation, 0, 0);
+    }
+
+    private void Jump(InputAction.CallbackContext context)
+    {
+
+        ac.PlayJumpSFX();
     }
 
     public void ChangeMouseSensitivity(float value)
