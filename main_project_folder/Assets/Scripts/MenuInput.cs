@@ -59,7 +59,7 @@ public class MenuInput : MonoBehaviour
         IsGamePaused = true;
 
         //player.GetComponent<PlayerInput>().enabled = false;
-        InputSystem.actions.FindActionMap("Player").Disable();
+        //InputSystem.actions.FindActionMap("Player").Disable();
         print("Menu will open!");
 
         Cursor.lockState = CursorLockMode.None;

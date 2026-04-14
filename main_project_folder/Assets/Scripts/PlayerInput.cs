@@ -38,8 +38,9 @@ public class PlayerInput : MonoBehaviour
 
         jump.started += Jump;
 
-        Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = false;
+
+        //Cursor.lockState = CursorLockMode.Locked;
+        //Cursor.visible = false;
     }
 
     void OnEnable()

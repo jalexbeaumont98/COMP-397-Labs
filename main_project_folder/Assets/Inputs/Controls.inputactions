@@ -101,6 +101,17 @@
                 },
                 {
                     "name": "",
+                    "id": "b038c310-8017-4e92-817f-3a4d1e235bb6",
+                    "path": "<Gamepad>/leftStick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "4210fa8a-45ef-4538-aa1f-819b39c9c320",
                     "path": "<Mouse>/delta",
                     "interactions": "",
@@ -112,8 +123,30 @@
                 },
                 {
                     "name": "",
+                    "id": "17cf6c9c-2e16-40b1-aa42-9c7f08ba2b42",
+                    "path": "<Gamepad>/rightStick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Look",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "35477ca6-2340-41f0-b9d1-dcf470026bf5",
                     "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Fire",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "bffecc6d-78de-4663-bd34-149cc8c08f83",
+                    "path": "<Gamepad>/buttonWest",
                     "interactions": "",
                     "processors": "",
                     "groups": "",

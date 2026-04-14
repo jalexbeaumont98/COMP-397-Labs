@@ -1,0 +1,5 @@
+F:/Unity/Projects/COMP-397-Labs/main_project_folder/.utmp/RelWithDebInfo/41g152mc/arm64-v8a/CMakeFiles/edit_cache.dir
+F:/Unity/Projects/COMP-397-Labs/main_project_folder/.utmp/RelWithDebInfo/41g152mc/arm64-v8a/CMakeFiles/rebuild_cache.dir
+F:/Unity/Projects/COMP-397-Labs/main_project_folder/.utmp/RelWithDebInfo/41g152mc/arm64-v8a/GameActivity/CMakeFiles/game.dir
+F:/Unity/Projects/COMP-397-Labs/main_project_folder/.utmp/RelWithDebInfo/41g152mc/arm64-v8a/GameActivity/CMakeFiles/edit_cache.dir
+F:/Unity/Projects/COMP-397-Labs/main_project_folder/.utmp/RelWithDebInfo/41g152mc/arm64-v8a/GameActivity/CMakeFiles/rebuild_cache.dir
