@@ -83,6 +83,7 @@ public class PlayerInput : MonoBehaviour
     {
 
         ac.PlayJumpSFX();
+        EventChannelManager.Instance.voidEvent.RaiseEvent();
     }
 
     public void ChangeMouseSensitivity(float value)
